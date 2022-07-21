@@ -1,0 +1,6 @@
+CC3000HostDriver
+backup-util
+
+# Mac crap
+.DS_Store
+.build
