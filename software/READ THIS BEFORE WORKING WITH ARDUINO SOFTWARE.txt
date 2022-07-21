@@ -1,0 +1,25 @@
+Use the arduino-1.0.6-windows.exe Arduino IDE.
+Anything else will give errors.
+
+There are some libraries which are used with System 2, namely to work the ADC, DAC, WIFI, and LCD
+Many of these programs in this Software folder WILL NOT COMPILE with the stock Arduino sketch
+environment, because the libraries haven't been loaded.
+In order to get the programs to compile, and load on the arduino, do the following:
+Locate where Arduino installed on the computer you are using.
+On my 64-bit Windows 8.1 machine, it installed here:
+C:\Program Files (x86)\Arduino
+However on a 32-bit machine, it might have installed to the regular Program Files folder.
+Then, in that "Arduino" folder where the Arduino software installed, re-name the "libraries" folder
+to something like "stock_libraries"
+Then, inside the Software folder for the System 2 project, go inside the "NECESSARY LIBRARIES"
+folder and copy the "libraries" folder found there to the "Arduino" folder where the Arduino
+software was installed.
+Note: I also had to do this in a second location, "\Documents\Arduino\libraries".
+Now restart the Arduino sketch program and the software should compile.
+
+I have provided links to where the various new libraries were found online, in the "Web Links"
+folder of the System 2 Project Files folder.
+There shouldn't be any problems with the libraries, with the exception of the WIFI library
+The CC3000 wireless chip, by Adafruit, was pretty new when we started using it, and thus there
+are still some minor issues, and the library is still under development. It would be wise to
+check up on their progress from time to time to see if their developments could help our project.
